@@ -6,6 +6,7 @@ const forecast=require("./utils/foreacast.js");
 
 const app=express();
 
+//console.log("Hello000");
 //Paths for Express config
 const viewspath=path.join(__dirname, '../templates/views');
 const publicpath=path.join(__dirname,'../public');
