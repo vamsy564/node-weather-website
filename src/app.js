@@ -6,6 +6,8 @@ const forecast=require("./utils/foreacast.js");
 
 const app=express();
 
+const port=process.env.PORT||3000;
+
 //console.log("Hello000");
 //Paths for Express config
 const viewspath=path.join(__dirname, '../templates/views');
@@ -76,7 +78,7 @@ app.get('*',(req, res)=>{
 
 
 
-app.listen(3000,()=>{
-console.log("Server up on 3000");
+app.listen(port,()=>{
+console.log("Server up on "+port);
 });
 
