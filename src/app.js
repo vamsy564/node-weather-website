@@ -25,16 +25,16 @@ hbs.registerPartials(partialspath);
 app.use(express.static(publicpath));
 
 app.get('',(req,res)=>{
-    res.render('index',{"title":"Weather","createdby":"Vamsi"});
+    res.render('index',{"title":"Weather","createdby":"Vamsi Mamidala"});
     //res.send("Index Page");
 })
 
 app.get('/about',(req, res)=>{
-    res.render('about',{"title":"About","createdby":"Vamsi"});
+    res.render('about',{"title":"About","createdby":"Vamsi Mamidala"});
 })
 
 app.get('/help',(req,res)=>{
-    res.render('help',{"title":"Help","createdby":"Vamsi"});
+    res.render('help',{"title":"Help","createdby":"Vamsi Mamidala"});
 })
 
 app.get('/help/*',(req,res)=>{
